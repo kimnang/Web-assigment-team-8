@@ -1,11 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap'); */
+/* Add Fonts */
+@font-face {
+  font-family: 'khmer_battambang';
+  src: url('../fonts/KhmerOS_battambang.ttf');
+}
+@font-face{
+  font-family: 'khmer-fasthand';
+  src: url('../fonts/KhmerOS_fasthand.ttf');
+}
+@font-face {
+  font-family: 'khmer-muol';
+  src: url('../fonts/KhmerOS_muol.ttf');
+}
+@font-face {
+  font-family: 'khmer-muollight';
+  src: url('../fonts/KhmerOS_muollight.ttf');
+}
+
+:root{
+  --dark-sky: #0E6CB7;
+  --dark-gray: #595959;
+  --light-gray: #BABABA;
+  --light-sky: #B0C9DE;
+  --light-red: #CE3F3B;
+}
 
 *{
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'khmer_battambang';
 }
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+#menu-navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar-content-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  font-size: 18px;
+  width: 100%;
+  background-color: #DEEAF6;
+}
+#home{
+  background-color: var(--dark-gray);
+  color: var(--light-gray) !important;
+  padding: 10px;
+  border-radius: 7px;
+}
+  
+.menu-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.menu-list li{
+  position: relative;
+  padding: 15px;
+  text-align: center;
+}
+.menu-list > li:hover{
+  background-color: var(--dark-gray);
+  border-radius: 7px;
+  color: white;
+}
+.menu-list li:hover .sub-menu-dropdown{
+  visibility: visible;
+  opacity: 1;
+}
+.menu-list li .sub-menu-dropdown{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 200px;
+  height: 200px;
+  overflow-y: auto;
+  background-color: var(--light-sky);
+  border-radius: 0 0 1rem 1rem;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
+}
+
+.menu-list #angkor-logo{  
+  align-self: center;
+  justify-self: center;
+}
+
+#angkor-logo{
+  height: 100%;
+}
+.search-place-wrapper{
+  border: 2px solid var(--dark-sky);
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.search-place-wrapper i{
+  margin: 0 10px 0 0;
+  color: var(--light-gray);
+}
+.search-place-wrapper input{
+  border: none;
+  color: black;
+  background-color: inherit;
+}
+#navbar-content-wrapper a{
+  color: black;
+}
+#navbar-content-wrapper .contact-us{
+  color: white;
+  background-color: var(--light-red);
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+input:focus{
+  outline: none;
+}
+
+
+
+
+
+
 
 header{
   height: 90px;

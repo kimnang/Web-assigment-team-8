@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +11,65 @@
     <title>Team 8 assigment</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="dist/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="dist/fontawesome-free-6.2.0-web/css/fontawesome.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="dist/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+
+    <!-- Style -->
     <link rel='stylesheet' href='./dist/style/style.css'>
     <head>
-    </head>
-    <body>
-        <header>
-            <div class="inner-width">
-              <h1 class="logo">Team <span style="color:#273b91;">8</span></h1>
-              <i class="menu-toggle-btn fas fa-bars"></i>
-              <nav class="navigation-menu">
-                <a href="#"><i class="fas fa-home home"></i> Home</a>
-                <a href="#"></i> About Team 8</a>
-                <a href="#"></i> Services</a>
-                <a href="#"></i> Contact</a>
-                <a href="#" class="aj_btn"> <i class="fas fa-lock" aria-hidden="true"></i>
-                  LOGIN</a>
-                  <div class="checkbox" >
-                    <input id="toggle" type="checkbox" >
-                    <label for="toggle" class="switch"></label>
-                    </div>
-              </nav>
+  </head>
+  <body>
+    <nav id="menu-navbar">
+      <div id="navbar-content-wrapper">
+        <a href="" id="home">
+          <i class="fa-solid fa-house-chimney"></i>
+        </a>
+        <ul class="menu-list">
+          <li>
+            ខេត្ត/តំបន់
+            <div class="sub-menu-dropdown">
+              <ul>
+                <li></li>
+              </ul>
             </div>
-          </header>
-          <link rel='stylesheet' href='./dist/js/script.js'>
-    </body>
+          </li>
+          <li>សណ្ឋាគារ</li>
+          <li>រថយន្ត</li>
+          <li>រថយន្តក្រុង</li>
+          <li>ជើងហោះហើរ</li>
+          <li>អាហារ</li>
+        </ul>
+        <img id="angkor-logo" src="images/angkor_wat_logo.png" alt="Cambodia">
+        <div class="search-place-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" class="search-place-input" placeholder="ស្វែងរកទីកម្សាន្តនានា">
+        </div>
+        <a href="" class="about-us">អំពីយើង</a>
+        <a href="" class="contact-us">ទំនាក់ទំនង់</a>
+      </div>
+    </nav>
+        <!-- <header>
+          <div class="inner-width">
+            <h1 class="logo">Team <span style="color:#273b91;">8</span></h1>
+            <i class="menu-toggle-btn fas fa-bars"></i>
+            <nav class="navigation-menu">
+              <a href="#"><i class="fas fa-home home"></i> Home</a>
+              <a href="#"></i> About Team 8</a>
+              <a href="#"></i> Services</a>
+              <a href="#"></i> Contact</a>
+              <a href="#" class="aj_btn"> <i class="fas fa-lock" aria-hidden="true"></i>
+                LOGIN</a>
+                <div class="checkbox" >
+                  <input id="toggle" type="checkbox" >
+                  <label for="toggle" class="switch"></label>
+                  </div>
+            </nav>
+          </div>
+        </header> -->
+        <script src="dist/js/script.js"></script>
+  </body>
 </html>
