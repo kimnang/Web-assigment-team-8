@@ -81,7 +81,6 @@ ul{
 .menu-list > li{
   position: relative;
   padding: 15px;
-  text-align: center;
 }
 .menu-list > li:hover{
   background-color: var(--dark-gray);
