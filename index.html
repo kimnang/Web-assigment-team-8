@@ -25,51 +25,73 @@
   <body>
     <nav id="menu-navbar">
       <div id="navbar-content-wrapper">
-        <a href="" id="home">
-          <i class="fa-solid fa-house-chimney"></i>
-        </a>
-        <ul class="menu-list">
-          <li>
-            ខេត្ត/តំបន់
-            <div class="sub-menu-dropdown">
-              <ul>
-                <li></li>
-              </ul>
-            </div>
-          </li>
-          <li>សណ្ឋាគារ</li>
-          <li>រថយន្ត</li>
-          <li>រថយន្តក្រុង</li>
-          <li>ជើងហោះហើរ</li>
-          <li>អាហារ</li>
-        </ul>
-        <img id="angkor-logo" src="images/angkor_wat_logo.png" alt="Cambodia">
-        <div class="search-place-wrapper">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" class="search-place-input" placeholder="ស្វែងរកទីកម្សាន្តនានា">
+        <div id="right-side-menu" class="d-flex justify-content-between align-items-center">
+          <a href="" id="home">
+            <i class="fa-solid fa-house-chimney"></i>
+          </a>
+          <ul class="menu-list">
+            <li>
+              ខេត្ត/តំបន់
+              <div class="sub-menu-dropdown">
+                <ul>
+                  <li>សណ្ឋាគារ</li>
+                  <li>រថយន្ត</li>
+                  <li>រថយន្តក្រុង</li>
+                  <li>ជើងហោះហើរ</li>
+                  <li>អាហារ</li>
+                  <li>សណ្ឋាគារ</li>
+                  <li>រថយន្ត</li>
+                  <li>រថយន្តក្រុង</li>
+                  <li>ជើងហោះហើរ</li>
+                  <li>អាហារ</li>
+                </ul>
+              </div>
+            </li>
+            <li>សណ្ឋាគារ</li>
+            <li>រថយន្ត</li>
+            <li>រថយន្តក្រុង</li>
+            <li>ជើងហោះហើរ</li>
+            <li>អាហារ</li>
+          </ul>
         </div>
-        <a href="" class="about-us">អំពីយើង</a>
-        <a href="" class="contact-us">ទំនាក់ទំនង់</a>
+        <img id="angkor-logo" src="images/angkor_wat_logo.png" alt="Cambodia">
+        <div id="left-side-menu" class="d-flex justify-content-between align-items-center">
+          <div class="search-place-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="search-place-input" placeholder="ស្វែងរកទីកម្សាន្តនានា">
+          </div>
+          <a href="" class="about-us">អំពីយើង</a>
+          <a href="" class="contact-us">ទំនាក់ទំនង់</a>
+          <!-- Theme mode Dark/Light -->
+          <input type="checkbox" name="theme-mode" id="theme-mode">
+          <label for="theme-mode">
+          </label>
+        </div>
       </div>
     </nav>
-        <!-- <header>
-          <div class="inner-width">
-            <h1 class="logo">Team <span style="color:#273b91;">8</span></h1>
-            <i class="menu-toggle-btn fas fa-bars"></i>
-            <nav class="navigation-menu">
-              <a href="#"><i class="fas fa-home home"></i> Home</a>
-              <a href="#"></i> About Team 8</a>
-              <a href="#"></i> Services</a>
-              <a href="#"></i> Contact</a>
-              <a href="#" class="aj_btn"> <i class="fas fa-lock" aria-hidden="true"></i>
-                LOGIN</a>
-                <div class="checkbox" >
-                  <input id="toggle" type="checkbox" >
-                  <label for="toggle" class="switch"></label>
-                  </div>
-            </nav>
+
+    <div class="container">
+      <div class="row" id="home-intro">
+        <div class="col-12 col-md-6 d-flex align-items-center aside-banner">
+          <img src="images/home_banner.jpg" alt="Cambodia Travel guide">
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center flex-column">
+          <p class="title">ដំណើរកម្សាន្តនៅកម្ពុជា</p>
+          <p class="sub-title">តំបន់ទេសចណ៍</p>
+          <p class="description">វិស័យទេសចរណ៍នៅកម្ពុជា គឺជាវិស័យដល់សំខាន់បំផុតនៅក្នុងសេដ្ឋកិច្ច របស់កម្ពុជានៅក្នុងឆ្នាំ២០១៣ ការមកដល់ទេសចរណ៍កើនឡើងដល់ ១៧.៥% ពីមួយឆ្នាំទៅមួយឆ្នាំដោយអ្នកធ្វើដំណើរអាជីវកម្មកើនឡើង ៤៧% .....</p>
+          <div class="btn-wrapper d-flex mt-3">
+            <div class="btn-detail read-more">
+              <i class="fa-solid fa-book"></i>
+              <span>អានបន្ថែម</span>
+            </div>
+            <div class="btn-detail watch-video">
+              <i class="fa-brands fa-youtube"></i>
+              <span>មើលវីដេអូ</span>
+            </div>
           </div>
-        </header> -->
-        <script src="dist/js/script.js"></script>
+        </div>
+      </div>
+    </div>
+    <script src="dist/js/script.js"></script>
   </body>
 </html>
