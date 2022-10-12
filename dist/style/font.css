@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'khmer_battambang';
+    src: url('../fonts/KhmerOS_battambang.ttf');
+}
+@font-face{
+    font-family: 'khmer-fasthand';
+    src: url('../fonts/KhmerOS_fasthand.ttf');
+}
+@font-face {
+    font-family: 'khmer-muol';
+    src: url('../fonts/KhmerOS_muol.ttf');
+}
+@font-face {
+    font-family: 'khmer-muollight';
+    src: url('../fonts/KhmerOS_muollight.ttf');
+}
+@font-face {
+    font-family: 'khmer-lazy-out-line';
+    src: url('../fonts/Kh_BL_LazyOutline_Regular.ttf');
+}
+@font-face {
+    font-family: 'kdam-thmor';
+    src: url('../fonts/Kdam_Thmor_Regular.ttf');
+}
