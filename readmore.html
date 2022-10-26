@@ -20,9 +20,16 @@
 
     <!-- Style -->
     <link rel='stylesheet' href='./dist/style/style.css'>
+     
+    <!-- <div class="se-pre-con"></div> -->
     <head>
   </head>
   <body>
+    <div class="preloader_wrapper">
+      <div class="preloader_inner">
+        <img src="images/preloader.gif" alt="image" />
+      </div>
+    </div>
     <nav id="menu-navbar">
       <div id="navbar-content-wrapper">
         <div id="right-side-menu" class="d-flex justify-content-between align-items-center">
@@ -70,16 +77,21 @@
       </div>
     </nav>
 <!--Content Post-->
-   <div class="content-post container">
+  <div class="content-post container">
     <div class="row"> <!--Display flix-->
       <div class="col-lg-9">
         <div class="description-1">
-          <p class="title-content-post pt-2">ដំណើរកម្សាន្តនៅកម្ពុជា</p>
-          <img class="img-content-post" src="./images/readme-pic.jpg">
-            <p class="text-description">
-             Welcome to Cambodia
-            </p>
+          <div class="img-content-wrap">
+            <img class="img-content-post" src="./images/readme-pic.jpg">
+            <div class="overlay">
+              <p class="title-content-post pt-2">ដំណើរកម្សាន្តនៅកម្ពុជា</p>
+            </div>
           </div>
+            <p class="text-description">រាជធានីភ្នំពេញ (ក្លាយមកពីពាក្យ “ភ្នំដូនពេញ” ឬ “ភ្នំរបស់លោកយាយពេញ”) គឺជារាជធានី និងជាបេះដូងនៃប្រទេសកម្ពុជា។ រាជធានីភ្នំពេញ បច្ចុប្បន្ននេះមានការរីកចម្រើនដ៏ខ្លាំងក្លានៃវិស័យទេសចរណ៍ វប្បធម៌ ប្រវត្តិសាស្ត្រ និងរបៀបរស់នៅ។</p>
+            <p class="text-description">ណាហ្គាវើលមានទីតាំងស្ថិតនៅក្នុងតំបន់ជិតមាត់ទន្លេនៃរាជធានីភ្នំពេញ ហើយក៏ស្ថិតនៅជិតទីតាំងបេតិកភណ្ឌវប្បធម៌ដ៏សម្បូរបែបជាច្រើន ដោយធ្វើដំណើរដោយរ៉ឺម៉ក ឬដោយតាក់ស៊ី។ ប្រាសាទ វិមាន ព្រះបរមរាជវាំង ផ្សារ មជ្ឈមណ្ឌលសិល្បៈ និងកន្លែងជាច្រើនទៀតមានទីតាំងស្ថិតនៅជិតទីតាំងរបស់ណាហ្គាវើល។</p>
+            <p class="text-description">ក្រុមការងារដែលមានបទពិសោធន៍ និងជំនាញវិជ្ជាជីវៈរបស់យើងខ្ញុំនៅទីនេះដើម្បីជួយអ្នកក្នុងការរៀបចំដំណើរទេសចរណ៍បែបឯកជន ព្រមទាំងអាចណែនាំអ្នកពីកន្លែងដែល “”ត្រូវទៅទស្សនា”” ខណៈពេលអ្នកកំពុងស្នាក់នៅជាមួយយើង។ ក្រៅពីវប្បធម៍ដ៏សម្បូរបែប ភ្ញៀវទេសចររបស់ណាហ្គាវើលនឹងរីករាយជាមួយការពិសាម្ហូបអាហារ ការដើរទិញអីវ៉ាន់ ការកម្សាន្ត ដែលមានស្រាប់នៅក្នុងទីតាំងរបស់យើងខ្ញុំ។</p>
+            <p class="text-description">យើងខ្ញុំមានសេចក្តីរំភើបដែលអ្នកបានជ្រើសយកយើងខ្ញុំជាគោលដៅរមណីយដ្ឋានរបស់អ្នក ស្របពេលជាមួយវត្តមានរបស់អ្នកនៅក្នុងរាជធានីភ្នំពេញ – ក្រុមការងាររបស់យើងខ្ញុំសូមស្វាគមន៍អ្នកមកកាន់ប្រទេសកម្ពុជា “ព្រះរាជាណាចក្រអច្ឆរិយៈ”។</p>
+        </div>
       </div>
       <div class="col-lg-3">
           <img src="./images/k_profile.jpg" alt="center" class="side-bar-profile">
@@ -89,8 +101,7 @@
         </p>
       </div>
     </div>
-    
-   </div>
+  </div>
     <script src="dist/js/script.js"></script>
   </body>
 </html>

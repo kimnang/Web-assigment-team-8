@@ -475,23 +475,17 @@ footer .social-icon{
   padding: 30px;
 }
 .description-1{
-box-shadow: -10px -6px 31px -10px #1777cb, 7px 8px 27px -5px #9800ff;
 border-radius: 15px;
 padding: 0px 15px;
 }
 .description-1 img{
   margin: 0 auto;
 }
-.description-1 img ~ p{
-  text-align: center;
-}
 .text-description{
   font-size: 16px;
-  text-align: center;
   font-family: 'Futura';
 }
 .col-lg-3{
-  box-shadow: 0 3px 8px  rgba(0,0,0,0.24), 0 0 1px 1px currentColor;
   background-color: green;
   border-radius: 15px;
   height: fit-content;
@@ -521,12 +515,51 @@ padding: 0px 15px;
   padding-right: 30px;
 }
 
+.img-content-wrap{
+  position: relative;
+  margin: 0 0 45px 0;
+}
+
 .img-content-post{
   border-radius: 5px;
-  box-shadow: 0 0 0  currentColor, 0 0 0  currentColor, 0 0 4px 2px #c63c3c;
   text-align: center;
-  height: 410px;
-  width: 890px;
+  /* height: 410px; */
+  width: 100%;
+  /* width: 890px; */
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  border-radius: 20px;
+  transform: translateY(50%);
+  background-color: rgba(0, 0, 0, .3);
+  padding: 10px;
+}
+
+.overlay > p {
+  margin: 0;
+  color:lightgray;
+}
+
+.text-description > p {
+  color: inherit;
+}
+.preloader_wrapper{
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:#ffffff;
+	z-index:1111;
+}
+.preloader_inner {
+	
 }
 
 /*End content-post*/
@@ -557,6 +590,12 @@ body:has(#theme-mode:checked) .watch-video{
 body:has(#theme-mode:checked) .popular-place-wrapper{
   background-color: var(--bs-gray-500);
 }
+
+body:has(#theme-mode:checked) .text-description{
+  color: white;
+}
+
+
 /* End dark mode */
 
 
