@@ -558,6 +558,60 @@ padding: 0px 15px;
 	background-color:rgba(0, 0, 0, .3);
 	z-index:1111;
 }
+.scroll_down{
+	position: absolute;
+	display: inline-block;
+	left: 50%;
+	bottom: 40px;
+	text-align: center;
+	transform: translateX(-50%);
+	cursor: pointer;
+	z-index: 1;
+}
+.scroll_span{
+	display: inline-block;
+	width: 25px;
+	height: 35px;
+	border-radius: 25px;
+	position: relative;
+	border: 2px solid #ffffff;
+	animation: bounce 3s infinite;
+}
+.scroll_span:before{
+	content: "";
+	display: inline-block;
+	height: 6px;
+	width: 4px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	transform: translateX(-50%);
+}
+.scroll_down p{
+	margin: 0;
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+}
+@keyframes bounce {
+  0%, {
+      transform: translateY(0px)
+  }
+  25% {
+      transform: translateY(5px)
+  }
+  50% {
+      transform: translateY(0px)
+  }
+  75% {
+      transform: translateY(5px)
+  }
+  100% {
+      transform: translateY(0px)
+  }
+}
 /*End content-post*/
 
 
@@ -611,6 +665,7 @@ body:has(#theme-mode:checked) .text-description{
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
 
 /* End dark mode */
 
