@@ -612,6 +612,11 @@ padding: 0px 15px;
       transform: translateY(0px)
   }
 }
+.text-title-readmore{
+  font-family: "khmer-muol";
+  font-size: 20px;
+  color: red;
+}
 /*End content-post*/
 
 
