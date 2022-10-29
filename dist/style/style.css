@@ -264,6 +264,10 @@ input:focus{
   max-height: 180px;
   border-radius: 50px;
 }
+.img-main-1{
+  width: 350px;
+  height: 180px;
+}
 .travel-guide-container .area .area-title{
   text-decoration: underline;
   font-size: 25px;
@@ -616,6 +620,22 @@ padding: 0px 15px;
   font-size: 20px;
   color: red;
 }
+.imgshadowblack{
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+/* .clv_btn{
+  text-align: center;
+} */
+.btn-readmore{
+  text-align: center;
+  padding-top: 12px;
+  background-color: lightgray;
+  height: 48px;
+  width: 170px;
+  border-radius: 30px;
+  margin: auto;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
 /*End content-post*/
 /*Start Carlendar bar*/
 :root {
@@ -645,9 +665,9 @@ padding: 0px 15px;
   border-radius: var(--calendar-border-radius);
 }
 
-/* .calendar-inner {
+.calendar-inner {
   padding: 10px 10px;
-} */
+}
 
 .calendar .calendar-inner .calendar-body {
   display: grid;
