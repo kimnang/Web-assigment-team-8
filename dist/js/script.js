@@ -7,6 +7,9 @@ $(".scroll_down").on('click', function(){
 	var vheight = $(window).height();
 	$("html, body").animate({scrollTop: vheight}, 1000);
 });
+function imgshadowblack(){
+  
+}
 // $("img-content-post").on('mouseup', function(){
 // 	$
 // })
