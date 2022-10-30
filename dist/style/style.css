@@ -845,6 +845,54 @@ body:has(#theme-mode:checked) .popular-place-wrapper{
 body:has(#theme-mode:checked) .text-description{
   color: white;
 }
+
+/* Just call class below in case you want to change color while dark mode*/
+/* Text color */
+body:has(#theme-mode:checked) .dark-mode-color-white{
+  color: white;
+}
+body:has(#theme-mode:checked) .dark-mode-color-gray{
+  color: gray;
+}
+body:has(#theme-mode:checked) .dark-mode-color-lightGray{
+  color: lightgray;
+}
+body:has(#theme-mode:checked) .dark-mode-color-lightRed{
+  color: var(--light-red);
+}
+body:has(#theme-mode:checked) .dark-mode-color-red{
+  color: red;
+}
+body:has(#theme-mode:checked) .dark-mode-color-blue{
+  color: blue;
+}
+body:has(#theme-mode:checked) .dark-mode-color-yellow{
+  color:  yellow;
+}
+/* End text color */
+
+/* Background color */
+body:has(#theme-mode:checked) .dark-mode-color-white{
+  color: rgba(255, 255, 255, .4);
+}
+body:has(#theme-mode:checked) .dark-mode-color-gray{
+  color: rgba(128, 128, 128, .4);
+}
+body:has(#theme-mode:checked) .dark-mode-color-lightGray{
+  color: rgba(211, 211, 211, .4);
+}
+body:has(#theme-mode:checked) .dark-mode-color-red{
+  color: rgba(255, 0, 0, .4);
+}
+body:has(#theme-mode:checked) .dark-mode-color-blue{
+  color: rgba(0, 0, 255, .4);
+}
+body:has(#theme-mode:checked) .dark-mode-color-yellow{
+  color:  rgba(255, 255, 0, .4);
+}
+/* End background color */
+/* End Dark mode */
+
 .preloader_wrapper {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
