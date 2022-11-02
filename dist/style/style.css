@@ -905,7 +905,6 @@ body:has(#theme-mode:checked) .dark-mode-color-yellow{
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
 /* End dark mode */
 
 
