@@ -312,6 +312,10 @@ input:focus{
   width: 250px;
   border-radius: 40px;
 }
+.pupular-place-img{
+  height: 150px;
+  width: 250px;
+}
 .popular-place .place-decription{
   padding: 0 0 0 15px;
   font-size: 22px;
