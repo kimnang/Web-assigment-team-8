@@ -14,22 +14,30 @@ $(window).on('load', function(){
 });
 $(".scroll_down").on('click', function(){
 	var vheight = $(window).height();
-	$("html, body").animate({scrollTop: vheight}, 0);
+	$("html, body").animate({scrollTop: vheight}, 400);
 });
-// Animate after the slider changes
-$("#mainBanner").on("slid.bs.carousel", function(e) {
-  // Add .d-none to previous shown slide
-  $(".carousel-item *").addClass("d-none");
 
-  // Element for new slide
-  var c = e["relatedTarget"];
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
 
-  // After 0.7 sec slide changes, then make the animation for new slide
-  setTimeout(function() {
-    $(c)
-      .find("*")
-      .removeClass("d-none")
-      .addClass("animated");
-    console.log("c");
-  }, 700);
-});
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  $("html, body").animate({scrollTop: 0},400)
+}
