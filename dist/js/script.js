@@ -37,7 +37,6 @@ mybutton.style.display = "none";
 }
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
-
 function backToTop() {
   $("html, body").animate({scrollTop: 0},400)
 }
