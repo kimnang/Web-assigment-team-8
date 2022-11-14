@@ -828,14 +828,21 @@ ol.carousel-indicators li.active:before {
 
 /*End content-post*/
 /* Hotel Page*/
-.col-12 {
-  padding-bottom: 20px;
-}
-
 .hotel-head {
-  padding-top: 20px;
   width: calc(100% - 15px);
   border-bottom: 5px solid var(--light-red);
+}
+.fa-caret-up{
+  text-align: center;
+  font-size: 60px;
+  color: red;
+}
+.hotel-head-title {
+  font-size: 40px;
+}
+
+.hotel-head-title span {
+  font-family: 'kdam-thmor';
 }
 
 /* End page Hotel*/
