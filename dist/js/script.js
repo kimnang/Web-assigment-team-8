@@ -40,3 +40,20 @@ mybutton.addEventListener("click", backToTop);
 function backToTop() {
   $("html, body").animate({scrollTop: 0},400)
 }
+const boxes = document.querySelectorAll(".box");
+
+window.addEventListener("scroll", checkBoxes);
+checkBoxes();
+function checkBoxes() {
+  const triggerBottom = (window.innerHeight);
+
+  boxes.forEach((box) => {
+    const boxTop = box.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      box.classList.add("show");
+    }else {
+      box.classList.remove("show");
+    }
+  });
+}

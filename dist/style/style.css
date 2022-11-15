@@ -844,6 +844,22 @@ ol.carousel-indicators li.active:before {
 .hotel-head-title span {
   font-family: 'kdam-thmor';
 }
+.box {
+  transform: translateY(30%);
+  transition: transform 0.5s ease;
+}
+.box:nth-of-type(even) {
+  transform: translateY(30%);
+}
+
+.box.show {
+  transform: translateY(0);
+}
+.hotel-post{
+  padding-bottom: 15px;
+}
+
+
 
 /* End page Hotel*/
 .under-line-triangle{
