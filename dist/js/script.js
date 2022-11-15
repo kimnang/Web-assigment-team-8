@@ -40,12 +40,13 @@ mybutton.addEventListener("click", backToTop);
 function backToTop() {
   $("html, body").animate({scrollTop: 0},400)
 }
+//Animate when scroll down in page hotel
 const boxes = document.querySelectorAll(".box");
 
 window.addEventListener("scroll", checkBoxes);
 checkBoxes();
 function checkBoxes() {
-  const triggerBottom = (window.innerHeight);
+  const triggerBottom = 700;
 
   boxes.forEach((box) => {
     const boxTop = box.getBoundingClientRect().top;

@@ -845,14 +845,12 @@ ol.carousel-indicators li.active:before {
   font-family: 'kdam-thmor';
 }
 .box {
+  opacity: 0;
   transform: translateY(30%);
-  transition: transform 0.5s ease;
+  transition: transform 0.9s ease ,opacity 0.5s;
 }
-.box:nth-of-type(even) {
-  transform: translateY(30%);
-}
-
 .box.show {
+  opacity: 1;
   transform: translateY(0);
 }
 .hotel-post{
