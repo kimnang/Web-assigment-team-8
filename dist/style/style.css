@@ -856,12 +856,29 @@ ol.carousel-indicators li.active:before {
 .hotel-post{
   padding-bottom: 15px;
 }
-
-
-
+.card-img-top {
+  height: 228px;
+}
+.head-title-province{
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: var(--light-red);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.head-title-province span{
+  font-family: "khmer-muol" !important;
+  font-size: 25px;
+}
 /* End page Hotel*/
 .under-line-triangle{
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .line-triangle{
   position: relative;
