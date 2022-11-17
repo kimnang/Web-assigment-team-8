@@ -373,8 +373,9 @@ input:focus {
 
 .txt-top-place-title {
   color: #FF0000;
-  
+
 }
+
 .num-top-place-title {
   color: #0070C0;
 }
@@ -832,11 +833,13 @@ ol.carousel-indicators li.active:before {
   width: calc(100% - 15px);
   border-bottom: 5px solid var(--light-red);
 }
-.fa-caret-up{
+
+.fa-caret-up {
   text-align: center;
   font-size: 60px;
   color: red;
 }
+
 .hotel-head-title {
   font-size: 40px;
 }
@@ -844,22 +847,27 @@ ol.carousel-indicators li.active:before {
 .hotel-head-title span {
   font-family: 'kdam-thmor';
 }
+
 .box {
   opacity: 0;
   transform: translateY(30%);
-  transition: transform 0.9s ease ,opacity 0.5s;
+  transition: transform 0.9s ease, opacity 0.5s;
 }
+
 .box.show {
   opacity: 1;
   transform: translateY(0);
 }
-.hotel-post{
+
+.hotel-post {
   padding-bottom: 15px;
 }
+
 .card-img-top {
   height: 228px;
 }
-.head-title-province{
+
+.head-title-province {
   position: relative;
   display: flex;
   padding-left: 20px;
@@ -872,15 +880,17 @@ ol.carousel-indicators li.active:before {
   font-weight: bold;
   color: white;
 }
-.head-title-province span{
+
+.head-title-province span {
   font-family: "khmer-muol" !important;
   font-size: 25px;
 }
+
 /* End page Hotel*/
 
 
 /* Flight schedule */
-.page-title > p{
+.page-title>p {
   margin-top: 20px;
   font-size: 30px;
   font-family: 'khmer-muol';
@@ -889,7 +899,7 @@ ol.carousel-indicators li.active:before {
 /* .under-line-triangle{
   padding-bottom: 20px;
 } */
-.line-triangle{
+.line-triangle {
   position: relative;
   margin-top: 40px;
   width: 100%;
@@ -897,7 +907,7 @@ ol.carousel-indicators li.active:before {
   background-color: var(--light-red);
 }
 
-.line-triangle::before{
+.line-triangle::before {
   content: '';
   position: absolute;
   top: 0;
@@ -910,21 +920,33 @@ ol.carousel-indicators li.active:before {
   border-color: transparent transparent var(--light-red) transparent;
 }
 
-.schedule-wrapper{
+.custom-card.card {
+  background: #8360c3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2ebf91, #8360c3);
+}
+
+.schedule-wrapper {
   position: relative;
   margin: 25px 0 0 0;
   min-height: 200px;
   padding: 20px;
+
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   /* background-image: url('../../images/Ankor_Wat_temple.jpg');
   background-repeat: no-repeat;
   background-size: cover; */
 }
 
-.schedule-wrapper:last-child{
+.schedule-wrapper:last-child {
   margin: 25px 0;
 }
 
-.schedule-wrapper > .fight-schedule > .schedule-source{
+.schedule-wrapper>.fight-schedule>.schedule-source {
   padding: 10px 30px;
   background-color: var(--light-red);
   border-radius: 100px;
@@ -935,17 +957,19 @@ ol.carousel-indicators li.active:before {
   color: #FFFFFF;
 }
 
-.schedule-wrapper > .schedule-table .custom-table{
+.schedule-wrapper>.schedule-table .custom-table {
   background-color: rgba(0, 0, 0, .5) !important;
   font-size: 20px;
   color: #FFFFFF;
   padding: 0 10px;
 }
-.schedule-wrapper > .schedule-table .custom-table tbody tr:hover{
+
+.schedule-wrapper>.schedule-table .custom-table tbody tr:hover {
   background-color: rgba(0, 0, 0, .7) !important;
   --bs-table-hover-color: #FFFFFF;
 }
-.schedule-wrapper > .image-background{
+
+.schedule-wrapper>.image-background {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -954,6 +978,7 @@ ol.carousel-indicators li.active:before {
   object-fit: fill;
   z-index: -1;
 }
+
 /* End Flight schedule */
 
 
