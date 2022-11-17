@@ -26,6 +26,13 @@
   transition-timing-function: ease-in-out;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+}
+
 body {
   background-color: var(--light-gray);
 }
@@ -876,8 +883,29 @@ ol.carousel-indicators li.active:before {
   font-family: "khmer-muol" !important;
   font-size: 25px;
 }
-/* End page Hotel*/
 
+/* End page Hotel*/
+/* Animation About US */
+.text-aboutus{
+  padding-top: 200px;
+  justify-content: center;
+  text-align: center;
+}
+.fiximg{
+  height: 400px;
+  width: 400px;
+  position: sticky;
+  top: 300px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.fiximg .img{
+  justify-content: center;
+}
+.fiximg.show{
+  opacity: 1;
+}
+/* End About Us */
 
 /* Flight schedule */
 .page-title > p{

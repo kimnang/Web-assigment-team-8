@@ -58,3 +58,21 @@ function checkBoxes() {
     }
   });
 }
+//Animate when scroll down in page hotel
+const fiximgs = document.querySelectorAll(".fiximg");
+
+window.addEventListener("scroll", checkfiximg);
+checkfiximg();
+function checkfiximg() {
+  const triggerBottom1 = 350;
+
+  fiximgs.forEach((fiximg) => {
+    const fiximgTop = fiximg.getBoundingClientRect().top;
+
+    if (fiximgTop < triggerBottom1) {
+      fiximg.classList.add("show");
+    }else {
+      fiximg.classList.remove("show");
+    }
+  });
+}
