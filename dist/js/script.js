@@ -64,7 +64,7 @@ const fiximgs = document.querySelectorAll(".fiximg");
 window.addEventListener("scroll", checkfiximg);
 checkfiximg();
 function checkfiximg() {
-  const triggerBottom1 = 350;
+  const triggerBottom1 = 305;
 
   fiximgs.forEach((fiximg) => {
     const fiximgTop = fiximg.getBoundingClientRect().top;

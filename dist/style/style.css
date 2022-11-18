@@ -896,18 +896,16 @@ ol.carousel-indicators li.active:before {
   font-family: "khmer-muol" !important;
   font-size: 25px;
 }
-<<<<<<< HEAD
-
-/* End page Hotel*/
-=======
->>>>>>> 098c7bbc42620f7c399f058e65622c63f945879c
 
 /* End page Hotel*/
 /* Animation About US */
 .text-aboutus{
-  padding-top: 200px;
+  margin-top: 400px;
+  margin-bottom: 200px;
   justify-content: center;
   text-align: center;
+}
+.text-aboutus{
 }
 .fiximg{
   height: 400px;
@@ -922,6 +920,10 @@ ol.carousel-indicators li.active:before {
 }
 .fiximg.show{
   opacity: 1;
+}
+.text-aboutus-title{
+  font-size: 36px;
+  font-family: "khmer-muol";
 }
 /* End About Us */
 
