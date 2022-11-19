@@ -125,3 +125,21 @@ $(document).ready(function (){
 
   console.log($('#menu-navbar ~ * :first'));
 })
+//Animate when scroll down in page hotel
+const fiximgs = document.querySelectorAll(".fiximg");
+
+window.addEventListener("scroll", checkfiximg);
+checkfiximg();
+function checkfiximg() {
+  const triggerBottom1 = 305;
+
+  fiximgs.forEach((fiximg) => {
+    const fiximgTop = fiximg.getBoundingClientRect().top;
+
+    if (fiximgTop < triggerBottom1) {
+      fiximg.classList.add("show");
+    }else {
+      fiximg.classList.remove("show");
+    }
+  });
+}
