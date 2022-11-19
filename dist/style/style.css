@@ -112,14 +112,27 @@ img {
   position: absolute;
   left: 0;
   top: 100%;
-  min-width: 200px;
   height: 200px;
   overflow-y: auto;
   background-color: var(--light-sky);
   border-radius: 1rem 1rem 1rem 1rem;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .28s ease-in-out;
+  min-width: 150px;
+  /* transition: opacity .28s ease-in-out; */
+}
+
+.menu-list li .sub-menu-dropdown ul{
+  padding: 0;
+}
+
+.menu-list li .sub-menu-dropdown li{
+  padding-left: 20px;
+}
+.menu-list li .sub-menu-dropdown li:hover{
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, .4);
+  /* transition-duration: 0ms; */
 }
 
 .menu-list li .sub-menu-dropdown::-webkit-scrollbar {
