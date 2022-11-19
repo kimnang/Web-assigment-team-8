@@ -58,7 +58,7 @@ img {
   z-index: 100;
 }
 
-#menu-navbar ~ * :first{
+#menu-navbar + *{
   /* margin: var(--navbar-height)  0 0 0; */
   padding: var(--navbar-height)  0 0 0;
 }
@@ -219,8 +219,8 @@ input:focus {
 }
 
 #home-intro {
-  /* height: calc(100vh - var(--navbar-height)); */
-  height: 100vh;
+  height: calc(100vh - var(--navbar-height));
+  /* height: 100vh; */
 }
 
 #home-intro .title {
