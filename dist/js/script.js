@@ -14,7 +14,7 @@ $(window).on('load', function(){
 });
 $(".scroll_down").on('click', function(){
 	var vheight = $(window).height();
-	$("html, body").animate({scrollTop: vheight}, 400);
+	$("html, body").animate({scrollTop: vheight - 90}, 0);
 });
 
 //Get the button
@@ -38,7 +38,7 @@ mybutton.style.display = "none";
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
 function backToTop() {
-  $("html, body").animate({scrollTop: 0},400)
+  $("html, body").animate({scrollTop: 0}, 0)
 }
 //Animate when scroll down in page hotel
 const boxes = document.querySelectorAll(".box");
@@ -58,3 +58,70 @@ function checkBoxes() {
     }
   });
 }
+
+
+// Index food
+var listFood = $('.list-foods');
+$(document).ready(function (){
+  const foodObject = [
+    {
+      province: '1',
+      title: 'ប្រហុកខ្ទិះ',
+      titleLink: '#',
+      img: 'images/food/ប្រហុកខ្ទិះ.jpeg'
+    },
+    {
+      province: '2',
+      title: 'សម្លប្រហើរ',
+      titleLink: '#',
+      img: 'images/food/សម្លប្រហើរ.jpeg'
+    },
+    {
+      province: '3',
+      title: 'សម្លកកូរ',
+      titleLink: '#',
+      img: 'images/food/សម្លកកូរ.jpeg'
+    },
+    {
+      province: '4',
+      title: 'អាម៉ុក',
+      titleLink: '#',
+      img: 'images/food/អាម៉ុក.jpeg'
+    },
+    {
+      province: '5',
+      title: 'បុកត្រប់ពុតលំញង',
+      titleLink: '#',
+      img: 'images/food/បុកត្រប់ពុតលំញង.jpeg'
+    },
+    {
+      province: '6',
+      title: 'ជ្រក់ក្រៅឆ្នាំង',
+      titleLink: '#',
+      img: 'images/food/ជ្រក់ក្រៅឆ្នាំង.jpeg'
+    },
+    {
+      province: '7',
+      title: 'ឆាអង្ក្រងសាច់គោ',
+      titleLink: '#',
+      img: 'images/food/ឆាអង្ក្រងសាច់គោ.jpeg'
+    },
+    {
+      province: '8',
+      title: 'នំបញ្ចុក',
+      titleLink: '#',
+      img: 'images/food/នំបញ្ចុក.jpeg'
+    },  
+  ];
+  foodObject.forEach(function (food){
+    const foodRender = `
+      <div class="food col-12 col-md-4 col-lg-3">
+        <p class="food-in-province m-0 text-end">${food.province ?? ''}</p>
+        <img src="${food.img ?? ''}" alt="" class="food-img" />
+        <p class="food-name m-0 text-center"> <a class="text-white" href="${food.titleLink ?? '#'}"> ${food.title ?? ''} </a> </p>
+      </div>`; 
+    listFood.append(foodRender);
+  })
+
+  console.log($('#menu-navbar ~ * :first'));
+})

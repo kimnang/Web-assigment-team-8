@@ -22,7 +22,7 @@
   padding: 0;
   font-family: 'khmer_battambang';
   transition-duration: .4s;
-  transition-property: background-color, color, border-color;
+  /* transition-property: background-color, color, border-color; */
   transition-timing-function: ease-in-out;
 }
 
@@ -46,13 +46,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+#menu-navbar ~ * :first{
+  /* margin: var(--navbar-height)  0 0 0; */
+  padding: var(--navbar-height)  0 0 0;
 }
 
 #navbar-content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: var(--navbar-height);
   font-size: 18px;
   width: 100%;
   background-color: #DEEAF6;
@@ -204,7 +212,8 @@ input:focus {
 }
 
 #home-intro {
-  height: calc(100vh - var(--navbar-height));
+  /* height: calc(100vh - var(--navbar-height)); */
+  height: 100vh;
 }
 
 #home-intro .title {
