@@ -58,9 +58,9 @@ img {
   z-index: 100;
 }
 
-#menu-navbar + *{
+#menu-navbar+* {
   /* margin: var(--navbar-height)  0 0 0; */
-  padding: var(--navbar-height)  0 0 0;
+  padding: var(--navbar-height) 0 0 0;
 }
 
 #navbar-content-wrapper {
@@ -122,14 +122,15 @@ img {
   /* transition: opacity .28s ease-in-out; */
 }
 
-.menu-list li .sub-menu-dropdown ul{
+.menu-list li .sub-menu-dropdown ul {
   padding: 0;
 }
 
-.menu-list li .sub-menu-dropdown li{
+.menu-list li .sub-menu-dropdown li {
   padding-left: 20px;
 }
-.menu-list li .sub-menu-dropdown li:hover{
+
+.menu-list li .sub-menu-dropdown li:hover {
   padding-left: 20px;
   background-color: rgba(255, 255, 255, .4);
   /* transition-duration: 0ms; */
@@ -921,15 +922,16 @@ ol.carousel-indicators li.active:before {
 
 /* End page Hotel*/
 /* Animation About US */
-.text-aboutus{
+.text-aboutus {
   margin-top: 350px;
   margin-bottom: 200px;
   justify-content: center;
   text-align: center;
 }
-.text-aboutus{
-}
-.fiximg{
+
+.text-aboutus {}
+
+.fiximg {
   height: 400px;
   width: 400px;
   position: sticky;
@@ -937,16 +939,20 @@ ol.carousel-indicators li.active:before {
   opacity: 0;
   transition: opacity 0.5s;
 }
-.fiximg .img{
+
+.fiximg .img {
   justify-content: center;
 }
-.fiximg.show{
+
+.fiximg.show {
   opacity: 1;
 }
-.text-aboutus-title{
+
+.text-aboutus-title {
   font-size: 36px;
   font-family: "khmer-muol";
 }
+
 /* End About Us */
 
 /* Flight schedule */
@@ -1041,6 +1047,15 @@ ol.carousel-indicators li.active:before {
 
 /* End Flight schedule */
 
+
+@media only screen and (max-width: 1440px) {
+  #menu-navbar #navbar-content-wrapper {
+    font-size: 13px !important;
+    --logo-width: 140px;
+    --navbar-height: 65px;
+  }
+
+}
 
 
 
